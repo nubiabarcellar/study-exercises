@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt">
+
+<head>
+    <meta charset="UTF-8">
+    <title>teste</title>
+    <style>
+        body {
+            background-color: bisque;
+        }
+
+        h1 {
+            color: red;
+        }
+
+        h2 {
+            color: green;
+        }
+
+        h3 {
+            color: rgb(15, 113, 170)
+        }
+        ol.empresa{
+            list-style-type: upper-alpha
+            }
+        ol.ordenada{
+            list-style-type: upper-alpha;
+        }
+        ul{
+            list-style-type: decimal-leading-zero;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Texto escrito em vermelho</h1>
+    <h2>Texto escrito em verde</h2>
+    <h3>Texto escrito em azul petróleo</h3>
+    <ul> Lista não ordenada
+        <li>item 1</li>
+        <li>item 2</li>
+        <li>item 3</li>
+    </ul>
+    <ol class="ordenada"> Lista ordenada
+        <li>item 1</li>
+        <li>item 2</li>
+        <li>item 3</li>
+    </ol>
+    <ol class="empresa">
+        <li>Fechar contrato</li>
+        <li>Análise de sistema
+            <ol class="empresa">
+                <li>Avaliação de empresa
+                    <ol class="empresa">
+                        <li>Entrevista com funcionários</li>
+                        <li>Pesquisa de documentação da empresa</li>
+                    </ol>
+                </li>
+                <li>Programação</li>
+                <li>Aprovação do projeto</li>
+            </ol>
+        </li>
+        <li>Treinamento dos usuários</li>
+    </ol>
+</body>
+
+</html>
