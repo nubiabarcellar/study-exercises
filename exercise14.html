@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="pt">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aula 5.1</title>
+    <style>
+        div {
+            display: grid;
+            place-items: center;
+            height: 400px;
+        }
+
+        table {
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            border-collapse: collapse;
+        }
+
+        caption {
+            background-color: rgb(2, 192, 250);
+            font-size: 20px;
+            height: 35px;
+            padding-top: 10px;
+            padding-bottom: 5px;
+        }
+
+        th {
+            background-color: rgb(72, 203, 255);
+
+        }
+
+        tr {
+            background-color: rgb(185, 226, 253);
+            text-align: center;
+        }
+
+        tr.cor {
+            background-color: rgb(227, 243, 250);
+        }
+
+        td,
+        th {
+            height: 30px;
+            width: 170px;
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+        <table>
+            <caption><strong>Tabela B</strong></caption>
+            <tr>
+                <th>Indivíduo</th>
+                <th>X: Massa Corporal (kg)</th>
+                <th>Y: Consumo Anual de Água (L)</th>
+            </tr>
+            <tr>
+                <td>1</td>
+                <td>90</td>
+                <td>850</td>
+            </tr>
+            <tr class="cor">
+                <td>2</td>
+                <td>120</td>
+                <td>400</td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>60</td>
+                <td>300</td>
+            </tr>
+            <tr class="cor">
+                <td>4</td>
+                <td>40</td>
+                <td>550</td>
+            </tr>
+            <tr>
+                <td>5</td>
+                <td>82</td>
+                <td>490</td>
+            </tr>
+            <tr class="cor">
+                <td>6</td>
+                <td>90</td>
+                <td>350</td>
+            </tr>
+        </table>
+    </div>
+</body>
+
+</html>
