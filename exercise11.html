@@ -5,65 +5,88 @@
     <meta charset="UTF-8">
     <title>Aula 4.4</title>
     <style>
-        table {
-            border-collapse: collapse;
+        div{
+            display: grid;
+            place-items: center;
+            height: 500px;
+        }
+        table,
+        th,
+        td {
+            border: 3px solid rgb(54, 53, 53);
         }
 
-        th {
-            background-color: cadetblue;
-            border: 2px solid;
-            padding-top: 7px;
-            padding-bottom: 7px;
-            padding-left: 10px;
-            padding-right: 10px;
+        table {
+            border-collapse: collapse;
             font-size: 20px;
         }
 
-        tr,
+        th,
         td {
-            border: 1px solid;
-            padding-top: 7px;
-            padding-bottom: 7px;
-            padding-left: 10px;
-            padding-right: 10px;
+            height: 40px;
+            width: 150px;
+        }
+
+        th {
+            background-color: blue;
+            color: azure;
         }
 
         tr {
-            background-color: azure;
+            background-color: lightblue;
+            text-align: center;
+        }
+
+        tr.cor {
+            background-color: rgb(220, 240, 247);
         }
 
         tr:hover {
-            background-color: brown;
+            background-color: azure;
+        }
+
+        caption {
+            font-size: 30px;
+            margin-bottom: 20px;
+        }
+
+        td.curso {
+            text-align: left;
         }
     </style>
 </head>
 
 <body>
-    <table>
-        <caption>
-            <h3>Cursos do Campus Tubarão</h3>
-        </caption>
-        <tr>
-            <th>Curso</th>
-            <th>Nível</th>
-            <th>Duração</th>
-        </tr>
-        <tr>
-            <td>ADS</td>
-            <td>Superior</td>
-            <td>6 meses</td>
-        </tr>
-        <tr>
-            <td>Desenvolvimento de Sistemas</td>
-            <td>Técnico</td>
-            <td>3 semestres</td>
-        </tr>
-        <tr>
-            <td>Matemática</td>
-            <td>Superior</td>
-            <td>9 semestres</td>
-        </tr>
-    </table>
+    <div>
+        <table>
+            <caption><strong>Cursos</strong></caption>
+            <tr>
+                <th>Curso</th>
+                <th>Nível</th>
+                <th>Duração</th>
+            </tr>
+            <tr>
+                <td class="curso">ADS</td>
+                <td>Superior</td>
+                <td>6 meses</td>
+            </tr>
+            <tr class="cor">
+                <td class="curso">Desen Sistemas</td>
+                <td>Técnico</td>
+                <td>3 semestres</td>
+            </tr>
+            <tr>
+                <td class="curso">Matemática</td>
+                <td>Superior</td>
+                <td>8 semestres</td>
+            </tr>
+            <tr class="cor">
+                <td class="curso">Tec Educação</td>
+                <td>Especialização</td>
+                <td>2 semestres</td>
+            </tr>
+        </table>
+    </div>
 </body>
 
 </html>
