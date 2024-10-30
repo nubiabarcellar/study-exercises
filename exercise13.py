@@ -1,7 +1,7 @@
 # João precisa calcular seu Índice de Massa Corporal (IMC) para avaliar seu peso ideal. Sabendo que a fórmula para calcular o IMC é: peso ÷ altura², crie um programa que calcule e informe a classificação do IMC.
 
 def imc(peso, altura):
-    calculoImc = [peso / (altura * altura)]
+    calculoImc = peso/(altura*altura)
     if (calculoImc <= 18.5):
         return "Magreza"
     elif (calculoImc > 18.5) and (imc <= 24.9):
@@ -17,7 +17,7 @@ def imc(peso, altura):
 
 
 peso = 50
-altura = 1.60
+altura = 160
 
 imcJoao = imc(peso, altura)
 print("O IMC do João é ", imcJoao)
