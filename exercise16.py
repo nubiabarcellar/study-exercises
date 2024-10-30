@@ -6,22 +6,17 @@
 
 # Caso seja inserido um número de operação que não exista, o resultado deverá ser 0.
 
-
 def calculadora(num1, num2, oper):
-    if (num1 + num2):
-        soma = oper
-        return soma
-    elif oper:
-        subt = num1 - num2
-        return subt
-    elif oper:
-        mult = num1 * num2
-        return mult
+    if (oper == 1):
+        return num1 + num2
+    if (oper == 2):
+        return num1 - num2
+    if (oper == 3):
+        return num1 * num2
+    if (oper == 4):
+        return num1 / num2
     else:
-        divi = num1 / num2
-        return divi
-    
-resultado = calculadora(2,5, soma)
-print(resultado)
-    
+        return 0
 
+resultado = calculadora(5, 2, 4)
+print(resultado)
