@@ -19,7 +19,7 @@ def calculadora(num1, num2, oper):
         return num1 - num2
     elif (oper == 3):
         return num1 * num2
-    elif (oper == 4):
+    elif (oper == 4) and (num2 != 0):
         return num1 / num2
     else:
         return 0
