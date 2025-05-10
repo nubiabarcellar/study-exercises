@@ -34,6 +34,7 @@ while (executar == True):
         print("Essa opção não existe")
     elif (oper == 0):
         executar = False
+        print("Saindo do sistema...")
     else:
         print("A opção selecionada foi ", oper)
         print("Agora, digite um número.")
